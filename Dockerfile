@@ -14,6 +14,4 @@ RUN pwd
 
 RUN ls -lrth
 
-RUN vale .
-
-ENTRYPOINT ["/usr/bin/bash vale ."] 
+RUN vale -v
