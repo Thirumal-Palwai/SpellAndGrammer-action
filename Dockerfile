@@ -10,4 +10,10 @@ RUN export PATH="./bin:$PATH"
 
 COPY . .
 
-ENTRYPOINT ["vale ."] 
+RUN pwd
+
+RUN ls -lrth
+
+RUN vale .
+
+ENTRYPOINT ["/usr/bin/bash vale ."] 
