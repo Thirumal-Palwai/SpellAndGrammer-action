@@ -7,7 +7,7 @@ branding:
 inputs:
   ConfigFile:
     description: "Configuration file for vale"
-    required: false
+    required: true
 
 runs:
   using: docker
