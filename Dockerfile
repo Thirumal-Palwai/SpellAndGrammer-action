@@ -10,4 +10,4 @@ RUN export PATH="./bin:$PATH"
 
 COPY . .
 
-ENTRYPOINT ["vale ."] 
+RUN "vale ." 
