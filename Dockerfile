@@ -10,4 +10,6 @@ RUN export PATH="./bin:$PATH"
 
 COPY ./styles/ /styles/
 
+RUN ls -larth /
+
 ENTRYPOINT vale .
