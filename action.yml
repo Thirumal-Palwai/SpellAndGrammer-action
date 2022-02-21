@@ -4,11 +4,6 @@ branding:
   color: green
   icon: shield
 
-inputs:
-  ConfigFile:
-    description: "Configuration file for vale"
-    required: true
-
 runs:
   using: docker
   image: Dockerfile

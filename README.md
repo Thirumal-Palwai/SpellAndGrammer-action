@@ -21,8 +21,6 @@ jobs:
       uses: actions/checkout@master
     - name: "spell check via vale"
       uses: philips-internal/Spell-and-Grammar-check-action@v1.0.0
-      with:
-        KubeconfigFile: "config.ini"
 ```
 ## please open an issue at this repository for any BUG/Enhancement request
 - https://github.com/philips-internal/Spell-and-Grammar-check-action/issues
