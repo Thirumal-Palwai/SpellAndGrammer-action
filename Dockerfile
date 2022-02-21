@@ -10,4 +10,4 @@ RUN export PATH="./bin:$PATH"
 
 COPY . .
 
-ENTRYPOINT ["pwd" "&&" "ls -lrth" "&&" "sh vale ."]
+ENTRYPOINT [/bin/bash -c "pwd && ls -lrth && vale ."]
