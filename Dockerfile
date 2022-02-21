@@ -8,10 +8,4 @@ RUN curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sh -s
 
 RUN export PATH="./bin:$PATH"
 
-WORKDIR /vale
-
-COPY styles .
-
-COPY .vale.ini .
-
 ENTRYPOINT vale .
