@@ -1,0 +1,16 @@
+name: "Spell and Grammar check"
+description: "This action helps in cheking spellings and grammer using vale"
+branding:
+  color: green
+  icon: shield
+
+inputs:
+  ConfigFile:
+    description: "Configuration file for vale"
+    required: false
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.ConfigFile }}

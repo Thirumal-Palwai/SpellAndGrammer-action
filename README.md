@@ -1,6 +1,6 @@
-# Spell-and-Grammer-check-action
+# Spell-and-Grammar-check-action
 
-A GitHub action to check spellings and grammer using vale
+A GitHub action to check spellings and grammar using vale
 
 ## Note: WIP
 
@@ -16,11 +16,13 @@ name: checks
 on: [push, pull_request]
 jobs:
   checks:
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v2
-    - run: sh ./checks.shs
+    runs-on: [self-hosted, linux, X64, research]
+    - name: checkout
+      uses: actions/checkout@master
+    - name: "spell check via vale"
+      uses: philips-internal/Spell-and-Grammar-check-action@v1.0.0
+      with:
+        KubeconfigFile: "config.ini"
 ```
-
-## please open an issue at this repo for any BUG/Enhancement request
-- https://github.com/philips-internal/Spell-and-Grammer-check-action/issues
+## please open an issue at this repository for any BUG/Enhancement request
+- https://github.com/philips-internal/Spell-and-Grammar-check-action/issues
