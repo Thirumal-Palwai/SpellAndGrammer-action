@@ -6,5 +6,9 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@master
+    - run: pwd
+    - run: ls -larth
+    - run: cd /vale
+    - run: ls -larth /vale
     - name: "spell check via vale"
       uses: Thirumal-Palwai/SpellAndGrammer-action@release_v1.0.0
