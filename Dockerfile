@@ -8,6 +8,6 @@ RUN curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sh -s
 
 RUN export PATH="./bin:$PATH"
 
-COPY styles  /github/workspace
+COPY styles .
 
 ENTRYPOINT vale .
