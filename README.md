@@ -1,12 +1,12 @@
 # vale-spell-grammar-check-action
 
-A GitHub action to check spellings and grammar using vale. Vale has a rich understanding of many markup formats with a highly customizable extension system capable of enforcing custom in-house set of rules.
+A GitHub action to check spelling and grammar using Vale. Vale has a rich understanding of many markup formats and a highly customizable extension system that is capable of enforcing custom in-house set of rules.
 
 ## Note: This action requires a configuration file ".vale.ini" in the root directory of your repository.
 
 ## Action input parameters
 
-This action does not have any input parameters. But expects configuration file ".vale.ini" from your repository.
+This action does not have any input parameters. But expects the configuration file ".vale.ini" from your repository.
 
 ```ini
 StylesPath = /styles
@@ -16,11 +16,11 @@ IgnoredScopes = code
 BasedOnStyles = Vale,write-good
 ```
 
-You can use default styles available as part of this action by refering "/styles" in StylesPath. To provide custom styles change this path. Read more information from vale official [website](https://docs.errata.ai).
+You can use the default styles available as part of this action by referring to "/styles" in StylesPath. To provide custom styles, change this path. Read more information from Vale's official [website](https://docs.errata.ai).
 
 ## Usages
 
-### Invoke the action on pull request to any branch
+### Invoke the action on a pull request to any branch
 For Example:
 
 ```yml

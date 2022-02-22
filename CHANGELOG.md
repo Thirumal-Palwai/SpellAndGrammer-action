@@ -5,4 +5,4 @@
 
 ### Features
 
-*  First Release - providing vale as an action to check spellings and grammar.
+*  First Release - providing vale as an action to check spelling and grammar.
