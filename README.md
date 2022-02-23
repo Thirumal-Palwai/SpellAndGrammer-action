@@ -1,6 +1,6 @@
 # vale-spell-grammar-check-action
 
-A GitHub action to check spelling and grammar using Vale. Vale has a rich understanding of many markup formats and a highly customizable extension system that is capable of enforcing custom in-house set of rules.
+A Github action to check spelling and grammar using Vale. Vale has a rich understanding of many markup formats and a highly customizable extension system that is capable of enforcing custom in-house set of rules.
 
 ## Note: This action requires a configuration file ".vale.ini" in the root directory of your repository.
 
@@ -40,5 +40,5 @@ jobs:
       uses: philips-internal/vale-spell-grammar-check-action@v1.0.0
 ```
 
-## please open an issue at this repoitory for any BUG/Enhancement request
+## please open an issue at this repository for any BUG/Enhancement request
 - https://github.com/philips-internal/vale-spell-grammar-check-action/issues
