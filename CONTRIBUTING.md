@@ -40,7 +40,7 @@ If your issue appears to be a bug, and hasn't been reported, open a new issue. H
 * **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
   causing the problem (line of code or commit)
 
-**If you get help, help others. Good karma rulez!**
+**If you get help, help others. Good karma rules!**
 
 ### Submitting a Merge Request
 Before you submit your merge request consider the following guidelines:
