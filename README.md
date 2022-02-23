@@ -40,5 +40,5 @@ jobs:
       uses: philips-internal/vale-spell-grammar-check-action@v1.0.0
 ```
 
-## please open an issue at this repo for any BUG/Enhancement request
+## please open an issue at this repoitory for any BUG/Enhancement request
 - https://github.com/philips-internal/vale-spell-grammar-check-action/issues
