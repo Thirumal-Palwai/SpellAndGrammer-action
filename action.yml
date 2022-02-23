@@ -4,6 +4,13 @@ branding:
   color: green
   icon: shield
 
+inputs:
+  Parameters:
+    description: "Custom parameters to vale CLI"
+    required: false
+
 runs:
   using: docker
   image: Dockerfile
+  args:
+    - ${{ inputs.Parameters }}

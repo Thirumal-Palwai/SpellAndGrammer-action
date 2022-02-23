@@ -1,13 +1,11 @@
-FROM ubuntu
+FROM jdkato/vale
 
-RUN apt update
-
-RUN apt -y install curl
-
-RUN curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sh -s v2.9.1
-
-RUN export PATH="./bin:$PATH"
+COPY ./.vale.ini /root/.vale.ini
 
 COPY ./styles/ /styles/
 
-ENTRYPOINT vale .
+COPY ./entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"] 
