@@ -6,7 +6,11 @@ A GitHub action to check spelling and grammar using Vale. Vale has a rich unders
 
 ## Action input parameters
 
-This action does not have any input parameters. But expects the configuration file ".vale.ini" from your repository.
+| Parameter    | Description                                                      | required | Comment                                   |
+| ------------ | ---------------------------------------------------------------- | -------- | ----------------------------------------- |
+| [Parameters] | [Capability to provide flags and respective values to vale CLI]  |   [NO]   | accumulate all parameters into one string |
+
+You can provide configuration file ".vale.ini" from your repository by placing it in repositoriy's root folder. Otherwise it uses configuration file present in action repository. It helps to control Vale's behavior:
 
 ```ini
 StylesPath = /styles
