@@ -1,4 +1,4 @@
-FROM jdkato/vale
+FROM jdkato/vale:v2.15.2
 
 COPY ./.vale.ini /root/.vale.ini
 

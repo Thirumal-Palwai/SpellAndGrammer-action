@@ -1,10 +1,10 @@
-name: checks
-on: [push, pull_request]
+name: Spell and Grammar Check
+on: push
 jobs:
-  checks:
+  spell-grammar-check:
     runs-on: ubuntu-20.04
     steps:
-    - name: checkout
+    - name: Checkout
       uses: actions/checkout@master
-    - name: "spell check via vale"
+    - name: "Spell and Grammar Check using Vale"
       uses: Thirumal-Palwai/SpellAndGrammer-action@release_v1.0.0

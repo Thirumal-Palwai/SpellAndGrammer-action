@@ -1,0 +1,6 @@
+# Business Category according to https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/AllItems.aspx
+# SWCoE - 62
+business-category: 62
+
+# Direct link to details business-category. Change the ID in the URL below.
+business-category-details: https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/DispForm.aspx?ID=62&e=XYmARn

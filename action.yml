@@ -1,5 +1,5 @@
 name: "Spell and Grammar check"
-description: "This action helps in cheking spellings and grammer using vale"
+description: "This action helps in cheking spellings and grammar using vale"
 branding:
   color: green
   icon: shield

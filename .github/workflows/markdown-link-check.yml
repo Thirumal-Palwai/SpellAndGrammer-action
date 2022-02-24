@@ -1,0 +1,12 @@
+name: Markdown links Check
+on: push
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Check Markdown Links
+      uses: gaurav-nelson/github-action-markdown-link-check@1.0.13
+      with:
+        config-file: .github/linters/markdown-link-check.json
