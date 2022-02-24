@@ -30,7 +30,7 @@ You can use the default styles available as part of this action by referring to 
 
 ## Usages
 
-In order to use vale-spell-grammar-check-action, you have to add a yml file in the `.github/workflows/` directory of your repository. For example, it could be `.github/workflows/spell-grammar-check.yml`.
+In order to use vale-spell-grammar-check-action, you have to add a `yml` file in the `.github/workflows/` directory of your repository. For example, it could be `.github/workflows/spell-grammar-check.yml`.
 
 Do note that this action requires the contents of the repository, so it is recommended to use it with the Checkout action `actions/checkout@master`. You have to define this part in your workflow, since it not a part of the action itself.
 
