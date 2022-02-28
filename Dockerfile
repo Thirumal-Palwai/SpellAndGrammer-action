@@ -12,6 +12,6 @@ RUN env
 
 RUN pwd
 
-RUN ls -lrth $Home
+RUN ls -larth $HOME
 
 ENTRYPOINT ["/entrypoint.sh"] 
