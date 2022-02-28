@@ -8,4 +8,10 @@ COPY ./entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
+RUN env
+
+RUN pwd
+
+RUN ls -lrth $Home
+
 ENTRYPOINT ["/entrypoint.sh"] 
