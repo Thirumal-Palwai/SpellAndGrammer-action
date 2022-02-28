@@ -3,9 +3,7 @@ set -ex
 
 Parameters=$1
 
-ls -larth /root
-env
-pwd
+mv /root/.vale.ini $HOME
 
 if [ ! -z "$Parameters" ]
 then
